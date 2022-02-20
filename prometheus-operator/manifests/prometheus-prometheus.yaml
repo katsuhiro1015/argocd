@@ -44,8 +44,11 @@ spec:
     runAsUser: 1000
   serviceAccountName: prometheus-k8s
   serviceMonitorNamespaceSelector:
-    matchNames:
-    - monitoring
-    - default
+    matchExpressions:
+      - key: name
+        operator: In
+        values:   
+          - monitoring
+          - default
   serviceMonitorSelector: {}
   version: 2.33.3
