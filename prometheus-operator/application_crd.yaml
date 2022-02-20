@@ -10,7 +10,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: 'prometheus-operator/manifests/setup'
-    repoURL: 'https://github.com/katsuhiro1015/'
+    repoURL: 'https://github.com/katsuhiro1015/argocd'
     targetRevision: HEAD
   project: default
   syncPolicy:
