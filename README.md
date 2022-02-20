@@ -16,6 +16,8 @@ rate(node_cpu_seconds_total{mode!="idle"}[1m])
 
 ## default namespaceのServiceMonitor
 
+prometheus-prometheus.yaml
+
 ```
 
 ```
